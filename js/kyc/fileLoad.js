@@ -1,0 +1,1 @@
+function handleImageUpload(e,a){var n=e.target.files[0];if(console.log(n),n){var i=new FileReader;i.onload=function(e){a.innerHTML=`<img src="${e.target.result}" class="el-image__inner el-image__preview" style="object-fit: contain;">`},i.readAsDataURL(n)}}
